@@ -9,4 +9,28 @@ class cliente extends utilizadores{
         nif = anif;
         telefone = atelefone;
     }
+
+    public String getMorada() {
+        return morada;
+    }
+
+    public void setMorada(String morada) {
+        this.morada = morada;
+    }
+
+    public static int getNif() {
+        return nif;
+    }
+
+    public static void setNif(int nif) {
+        cliente.nif = nif;
+    }
+
+    public static int getTelefone() {
+        return telefone;
+    }
+
+    public static void setTelefone(int telefone) {
+        cliente.telefone = telefone;
+    }
 }

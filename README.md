@@ -4,3 +4,4 @@ Apesar de tantos os farmaceuticos com os clientes terem os mesmos atributos como
 
 utlizadores-->outra class(nif, morada e contacto)--->class clientes e class farmaceurico
 
+Foram acrescentados os getters e setters necessarios e começada uma classe de registo de utilizador que ainda precisa ser terminada
