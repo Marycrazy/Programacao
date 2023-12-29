@@ -12,3 +12,5 @@ Referencias:
 https://www.javaprogressivo.net/2012/09/aplicativo-menu-simples-usando-metodos.html
 https://www.w3schools.com/java/java_files_read.asp
 https://www.devmedia.com.br/forum/como-criptografar-senha-em-java/564794
+https://www.digitalocean.com/community/tutorials/java-read-file-line-by-line
+https://stackoverflow.com/questions/5868369/how-can-i-read-a-large-text-file-line-by-line-using-java

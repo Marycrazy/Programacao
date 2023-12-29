@@ -6,7 +6,7 @@ public class leiturad {
 
     public void realizarLeitura() {
         try {
-            File arquivo = new File("credenciais_acesso.txt");
+            File arquivo = new File("./Programacao/trabalho/credenciais_acesso.txt");
             Scanner leitor = new Scanner(arquivo);
 
             while (leitor.hasNextLine()) {

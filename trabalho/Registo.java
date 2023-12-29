@@ -53,11 +53,11 @@ public class Registo {
     private void salvarUtilizadorTexto(utilizadores utilizador) 
     {
         //tem de ser o caminho completo do ficheiro
-        try (PrintWriter writer = new PrintWriter(new FileWriter("./credenciais_acesso.txt", true))) 
+        try (PrintWriter writer = new PrintWriter(new FileWriter("./Programacao/trabalho/credenciais_acesso.txt", true))) 
         {
             // Escreve os dados do utilizador no arquivo em formato de texto
             writer.println(utilizador.getlogin() + "," + utilizador.getPassword() + "," + utilizador.getNome() + ","
-                    + utilizador.getEmail() + "," + utilizador.isEstado() + "," + utilizador.getTipo());
+                    + utilizadores.getEmail() + "," + utilizador.isEstado() + "," + utilizador.getTipo());
                 
             System.out.println("Utilizador salvo no arquivo 'credenciais_acesso.txt'"); // PRINT DE TESTES APAGAR NO FIM!!!!!!!!!!!!!!!!!!!!!!!!!!
         } 

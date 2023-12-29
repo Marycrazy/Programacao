@@ -15,4 +15,5 @@ Maiana
     Criação das principais classes 
     Menu Inicial da aplicação
     Encriptação das passwords
+    verificação dos dados intruduzidos 
 }

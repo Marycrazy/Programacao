@@ -20,7 +20,7 @@ public class utilizadores{
     }
 
      public void setlogin(String login) {
-        this.login = login;
+        utilizadores.login = login;
     }
 
     public String getPassword() {
