@@ -5,3 +5,10 @@ Apesar de tantos os farmaceuticos com os clientes terem os mesmos atributos como
 utlizadores-->outra class(nif, morada e contacto)--->class clientes e class farmaceurico
 
 Foram acrescentados os getters e setters necessarios e começada uma classe de registo de utilizador que ainda precisa ser terminada
+
+
+
+Referencias:
+https://www.javaprogressivo.net/2012/09/aplicativo-menu-simples-usando-metodos.html
+https://www.w3schools.com/java/java_files_read.asp
+https://www.devmedia.com.br/forum/como-criptografar-senha-em-java/564794

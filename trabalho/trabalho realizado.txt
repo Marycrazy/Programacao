@@ -1,0 +1,18 @@
+Gui
+{
+    Criação da classe de Registo
+    Criação da classe de Login
+    Criação dos Getters e Setters necessários nas restantes classes
+}
+
+
+
+
+
+
+Maiana
+{
+    Criação das principais classes 
+    Menu Inicial da aplicação
+    Encriptação das passwords
+}

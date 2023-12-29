@@ -1,4 +1,4 @@
-public class utilizadores {
+public class utilizadores{
     private static String login;
     private String password;
     private String nome;
@@ -13,6 +13,14 @@ public class utilizadores {
         estado = aestado;
         email = aemail;
         tipo = atipo;
+    }
+
+    public String getlogin() {
+        return login;
+    }
+
+     public void setlogin(String login) {
+        this.login = login;
     }
 
     public String getPassword() {
