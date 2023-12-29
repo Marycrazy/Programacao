@@ -9,6 +9,7 @@ public class main {
             System.out.println("Escolha uma opçao");
             System.out.println("1. ler ficheiro"); 
             System.out.println("2. registo");
+            System.out.println("3. Sair");
             System.out.println("opcao:");
             opcao = entrada.nextInt();//espera que o utilizador digite um numero inteiro
             
@@ -22,6 +23,18 @@ public class main {
                 Registo registo = new Registo();
                 registo.realizarRegisto();
                 break;
+            
+            /*case 3:
+                if (utilizadores != null) 
+                {
+                    System.out.println("Até logo, " + login.getNome() + "!");
+                } 
+                else 
+                {
+                    System.out.println("Até logo!");
+                }
+                System.exit(0); // Encerra o programa
+                break;*/
                 
             default:
                 System.out.println("Opção inválida.");

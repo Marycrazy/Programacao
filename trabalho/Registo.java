@@ -22,8 +22,13 @@ public class Registo {
         try 
         {
             MessageDigest algorithm = MessageDigest.getInstance("MD5");
-            byte pass[] = algorithm.digest(password.getBytes("UTF-8"));
-            System.out.println(pass);
+            byte senha[] = algorithm.digest(password.getBytes("UTF-8"));
+            StringBuilder pass = new StringBuilder();
+            for (byte b : senha) 
+            {
+                pass.append(String.format("%02X", 0xFF & b));
+            }
+            password = pass.toString();
         } 
         catch (UnsupportedEncodingException | NoSuchAlgorithmException e) 
         {
@@ -47,13 +52,14 @@ public class Registo {
 
     private void salvarUtilizadorTexto(utilizadores utilizador) 
     {
-        try (PrintWriter writer = new PrintWriter(new FileWriter("credenciais_acesso.txt", true))) 
+        //tem de ser o caminho completo do ficheiro
+        try (PrintWriter writer = new PrintWriter(new FileWriter("./credenciais_acesso.txt", true))) 
         {
             // Escreve os dados do utilizador no arquivo em formato de texto
             writer.println(utilizador.getlogin() + "," + utilizador.getPassword() + "," + utilizador.getNome() + ","
                     + utilizador.getEmail() + "," + utilizador.isEstado() + "," + utilizador.getTipo());
                 
-            System.out.println("Utilizador salvo no arquivo 'Programacao/trabalho/credenciais_acesso.txt'"); // PRINT DE TESTES APAGAR NO FIM!!!!!!!!!!!!!!!!!!!!!!!!!!
+            System.out.println("Utilizador salvo no arquivo 'credenciais_acesso.txt'"); // PRINT DE TESTES APAGAR NO FIM!!!!!!!!!!!!!!!!!!!!!!!!!!
         } 
         catch (IOException e) 
         {
